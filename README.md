@@ -6,6 +6,7 @@
 
 必要なもの
 ----
+* java11
 * Localhost:9411で上がってくるZipkinのDockerコンテナ(デフォルトでDocker runする）
 
 
