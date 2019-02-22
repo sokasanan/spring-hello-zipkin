@@ -12,6 +12,10 @@
 
 使い方  
 ----
-1.localhost:8080/へアクセスする  
-2.localhost:9411のZipkinGUIでドリルダウンしてみる  
+    > ./mvnw clean package -DskipTests=true
+    > java -jar .\target\hello-0.0.1-SNAPSHOT.jar
+    > docker run -d -p 9411:9411 openzipkin/zipkin
+    
+localhost:8080/へアクセスする  
+localhost:9411のZipkinGUIでドリルダウンしてみる  
 ⇒ただし、画面に対してリクエストを投げていて、内部呼び出しではないので、IDは別となるので改善が必要
